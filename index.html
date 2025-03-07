@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8d7da 30%, #fff 100%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Вертикальное расположение на мобильных */
+            align-items: center;
+            gap: 20px;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .text {
+            text-align: center; /* Центрируем текст на мобильных */
+        }
+        .text h1 {
+            font-size: 60px; /* Уменьшаем размер заголовка */
+            color: #e63946;
+            margin: 0;
+        }
+        .text p {
+            font-size: 18px; /* Уменьшаем размер текста */
+            color: #d63384;
+            margin: 10px 0;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            border-radius: 10px;
+            width: 250px; /* Уменьшаем размер изображения */
+            height: auto;
+        }
+        @keyframes fadeIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row; /* Горизонтальное расположение на больших экранах */
+                text-align: left; /* Текст слева на больших экранах */
+                padding: 30px;
+            }
+            .text h1 {
+                font-size: 80px; /* Увеличиваем размер заголовка на больших экранах */
+            }
+            .text p {
+                font-size: 20px; /* Увеличиваем размер текста на больших экранах */
+            }
+            .image img {
+                width: 300px; /* Увеличиваем размер изображения на больших экранах */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>8</h1>
+            <p>МАРТА</p>
+            <p>С 8 Марта вас! Пусть в жизни всё складывается так, как вам хочется. Чтобы учителя ставили пятёрки без лишних вопросов, а родные всегда гордились вами. Желаю вам море радости и позитивных моментов в этом году. Оставайтесь такими же весёлыми и хорошими! С праздником! 💐✨</p>
+        </div>
+        <div class="image">
+            <img src="Тюльпаны.jpg" alt="Тюльпаны">
+        </div>
+    </div>
+</body>
+</html>
